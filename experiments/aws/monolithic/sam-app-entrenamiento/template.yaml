@@ -1,0 +1,29 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Monolitica - Entrenamiento
+
+Resources:
+  FuncionEntrenamientoMonolitica:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-entrenamiento-monolitica
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+      MemorySize: 1024
+      Timeout: 900
+      Environment:
+        Variables:
+          S3_BUCKET: "red-neuronal-monolitica-modelos"
+          TRAINED_MODEL_KEY: "modelo_entrenado.h5"
+          CONTAINER_BASE_URL: "<TENSORFLOW_CONTAINER_URL>"
+      Policies:
+        - S3ReadPolicy:
+            BucketName: red-neuronal-monolitica-modelos
+        - S3WritePolicy:
+            BucketName: red-neuronal-monolitica-modelos
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins: ["*"]
+          AllowMethods: ["POST"]

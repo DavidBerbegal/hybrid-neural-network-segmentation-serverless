@@ -1,0 +1,6 @@
+azure-functions
+numpy
+tensorflow-cpu
+azure-storage-blob
+psutil
+pandas

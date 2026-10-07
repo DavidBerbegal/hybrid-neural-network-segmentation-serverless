@@ -1,0 +1,19 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Segmentada - Capa oculta
+
+Resources:
+  FuncionCapaOculta:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-capa-oculta
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+      MemorySize: 1024
+      Timeout: 900
+      Environment:
+        Variables:
+          CONTAINER_URL: "<TENSORFLOW_CONTAINER_URL>/capa-oculta"
+      FunctionUrlConfig:
+        AuthType: NONE

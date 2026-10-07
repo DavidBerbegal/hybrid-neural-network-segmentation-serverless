@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Segmentada - Entrenamiento
+
+Resources:
+  FuncionEntrenamiento:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-entrenamiento
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+      MemorySize: 1024
+      Timeout: 900
+      Environment:
+        Variables:
+          S3_BUCKET_NAME: "red-neuronal-segmentada-modelos"
+          UNTRAINED_KEY:  "modelo_sin_entrenar.h5"
+          TRAINED_KEY:    "modelo_entrenado.h5"
+          DATOS_KEY:      "datos_entrenamiento.csv"
+          CONTAINER_TRAIN_URL: "<TENSORFLOW_CONTAINER_URL>/train-model"
+      Policies:
+        - S3ReadPolicy:
+            BucketName: red-neuronal-segmentada-modelos
+        - S3WritePolicy:
+            BucketName: red-neuronal-segmentada-modelos
+      FunctionUrlConfig:
+        AuthType: NONE

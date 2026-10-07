@@ -1,0 +1,3 @@
+requests
+boto3
+psutil==5.9.8

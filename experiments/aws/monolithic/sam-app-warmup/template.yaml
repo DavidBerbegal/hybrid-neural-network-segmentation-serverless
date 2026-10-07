@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Monolitica - Warm-up
+
+Resources:
+  WarmUpFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-monolitica-warm-up
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      Timeout: 900
+      MemorySize: 1024
+      Architectures: [x86_64]
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      PackageType: Zip
+      CodeUri: .
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins: ["*"]
+          AllowMethods: ["GET","POST"]
+
+Outputs:
+  WarmUpUrl:
+    Description: Function URL for warm-up
+    Value: !GetAtt WarmUpFunctionUrl.FunctionUrl

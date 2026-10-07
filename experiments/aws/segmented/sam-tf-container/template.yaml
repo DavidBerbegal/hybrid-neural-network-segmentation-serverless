@@ -1,0 +1,23 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Segmentada - Contenedor con TensorFlow completo (.h5)
+
+Resources:
+  TensorFlowContainerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      FunctionName: tf-container
+      MemorySize: 1024
+      Timeout: 900
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins:
+            - "*"
+          AllowMethods:
+            - "POST"
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: .
+      DockerTag: tensorflow-container

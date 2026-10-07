@@ -1,0 +1,30 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Segmentada - Modelo
+
+Resources:
+  FuncionModelo:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-modelo
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      CodeUri: .
+      MemorySize: 1024
+      Timeout: 900
+      Environment:
+        Variables:
+          # URLs de las funciones de capas (Function URL, sin path extra)
+          URL_CAPA_ENTRADA: "<INPUT_LAYER_FUNCTION_URL>"
+          URL_CAPA_OCULTA: "<HIDDEN_LAYER_FUNCTION_URL>"
+          URL_CAPA_SALIDA: "<OUTPUT_LAYER_FUNCTION_URL>"
+          # Contenedor: endpoint /configure-layer
+          URL_CONTENEDOR_CONFIG: "<TENSORFLOW_CONTAINER_URL>/configure-layer"
+          # S3 destino
+          S3_BUCKET_NAME: "red-neuronal-segmentada-modelos"
+          S3_KEY_H5: "modelo_sin_entrenar.h5"
+      Policies:
+        - S3WritePolicy:
+            BucketName: red-neuronal-segmentada-modelos
+      FunctionUrlConfig:
+        AuthType: NONE

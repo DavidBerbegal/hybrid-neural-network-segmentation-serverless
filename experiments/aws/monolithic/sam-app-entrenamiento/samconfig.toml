@@ -1,0 +1,10 @@
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "funcion-entrenamiento-monolitica"
+resolve_s3 = true
+s3_prefix = "funcion-entrenamiento-monolitica"
+region = "eu-west-3"
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []

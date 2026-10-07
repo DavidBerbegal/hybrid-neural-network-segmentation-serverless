@@ -1,0 +1,28 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Segmentada - Warm-up
+
+Resources:
+  WarmUpFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-warm-up
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      Timeout: 15
+      MemorySize: 256
+      Architectures: [x86_64]
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      PackageType: Zip
+      CodeUri: .
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins: ["*"]
+          AllowMethods: ["GET","POST"]
+
+Outputs:
+  WarmUpUrl:
+    Description: Function URL for warm-up
+    Value: !GetAtt WarmUpFunctionUrl.FunctionUrl

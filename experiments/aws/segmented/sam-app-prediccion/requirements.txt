@@ -1,0 +1,4 @@
+boto3
+requests
+numpy>=1.26.0,<2.2.0
+psutil==5.9.8

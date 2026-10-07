@@ -1,0 +1,9 @@
+version = 0.1
+[default.deploy.parameters]
+stack_name = "funcion-capa-salida"
+resolve_s3 = true
+s3_prefix = "funcion-capa-salida"
+region = "eu-west-3"
+capabilities = "CAPABILITY_IAM"
+disable_rollback = true
+image_repositories = []
