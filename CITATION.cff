@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the repository and the associated article."
+title: "Hybrid Architecture for Neural Network Execution in Serverless Environments"
+type: software
+authors:
+  - family-names: "Berbegal"
+    given-names: "David"
+repository-code: "https://github.com/DavidBerbegal/hybrid-neural-network-segmentation-serverless"
+url: "https://github.com/DavidBerbegal/hybrid-neural-network-segmentation-serverless"
+license: MIT
+version: "1.0.0"
+keywords:
+  - serverless computing
+  - neural networks
+  - machine learning
+  - hybrid architecture
+  - model segmentation
+  - AWS Lambda
+  - Azure Functions
+abstract: >-
+  Experimental source code associated with the research
+  "Hybrid Architecture for Neural Network Execution in Serverless Environments".
+  The repository contains monolithic, segmented and hybrid neural-network
+  implementations used for comparative experimentation in serverless environments.
+
+preferred-citation:
+  type: article
+  title: "Hybrid Architecture for Neural Network Execution in Serverless Environments"
+  authors:
+    - family-names: "Berbegal"
+      given-names: "David"
+  year: 2026
+  notes: "Manuscript in preparation. Complete publication metadata will be added when available."
