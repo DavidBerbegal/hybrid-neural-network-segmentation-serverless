@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Azure Functions local configuration
+local.settings.json
+
+# AWS SAM generated files
+.aws-sam/
+
+# Local environment variables
+.env
+.env.*
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.old
+
+# IDE
+.vscode/
+.idea/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Generated Machine Learning models
+*.h5
+*.keras
+*.pkl
+*.joblib
+
+# Archives
+*.zip
+*.7z
+*.rar
