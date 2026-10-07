@@ -1,0 +1,9 @@
+tensorflow-cpu==2.20.0
+protobuf==5.29.5
+azure-functions
+requests
+azure-storage-blob
+numpy
+psutil
+pandas
+
