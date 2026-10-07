@@ -196,9 +196,15 @@ Do not commit credentials, storage keys, connection strings or private endpoints
 
 ### Azure Storage configuration
 
-The Azure implementations expect the storage connection string to be provided through an environment variable.
+The Azure baseline implementations and the hybrid implementation use different environment variable names for the storage connection string.
 
-Depending on the implementation, the code uses a storage connection setting such as:
+Baseline Azure implementations:
+
+```text
+AZURE_STORAGE_CONNECTION_STRING
+```
+
+Hybrid Azure implementation:
 
 ```text
 STORAGE_CONNECTION_STRING

@@ -2,8 +2,8 @@ import json, time, urllib.request, urllib.error, concurrent.futures
 
 URLS = [
     "<TENSORFLOW_CONTAINER_URL>",  # contenedor
-    "<PREDICTION_URL>",  # predicción
-    "<TRAINING_URL>",  # entrenamiento
+    "<PREDICTION_FUNCTION_URL>",  # predicción
+    "<TRAINING_FUNCTION_URL>",  # entrenamiento
 ]
 
 PER_URL_TIMEOUT = 2.0  # segundos
