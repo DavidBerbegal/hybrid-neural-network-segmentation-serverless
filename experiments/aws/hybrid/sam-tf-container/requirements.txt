@@ -1,0 +1,10 @@
+flask==3.1.1
+git+https://github.com/slank/awsgi.git@cab44d0fcfb51eaffd3e7d9d045ca45197cb17e6
+tensorflow-cpu==2.20.0
+requests==2.32.4
+numpy==2.1.3
+keras==3.10.0
+ml-dtypes==0.5.1
+protobuf==5.29.5
+h5py==3.14.0
+psutil==5.9.8

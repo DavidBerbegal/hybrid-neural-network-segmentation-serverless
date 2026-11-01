@@ -1,0 +1,34 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Hibrida - Contenedor TensorFlow CPU
+
+Resources:
+  TensorFlowContainerFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      PackageType: Image
+      FunctionName: tf-container
+      Architectures:
+        - x86_64
+      MemorySize: 1024
+      Timeout: 900
+      EphemeralStorage:
+        Size: 512
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins:
+            - "*"
+          AllowMethods:
+            - POST
+    Metadata:
+      Dockerfile: Dockerfile
+      DockerContext: .
+      DockerTag: tensorflow-container
+
+Outputs:
+  FunctionName:
+    Value: !Ref TensorFlowContainerFunction
+
+  FunctionUrl:
+    Value: !GetAtt TensorFlowContainerFunctionUrl.FunctionUrl

@@ -1,0 +1,36 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Hibrida - Capa de entrada
+
+Parameters:
+  ContainerUrl:
+    Type: String
+    Description: URL completa del contenedor con la ruta /capa-entrada
+
+Resources:
+  FuncionCapaEntrada:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-capa-entrada
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      PackageType: Zip
+      CodeUri: .
+      Architectures:
+        - x86_64
+      MemorySize: 1024
+      Timeout: 900
+      EphemeralStorage:
+        Size: 512
+      Environment:
+        Variables:
+          CONTAINER_URL: !Ref ContainerUrl
+      FunctionUrlConfig:
+        AuthType: NONE
+
+Outputs:
+  FunctionName:
+    Value: !Ref FuncionCapaEntrada
+
+  FunctionUrl:
+    Value: !GetAtt FuncionCapaEntradaUrl.FunctionUrl

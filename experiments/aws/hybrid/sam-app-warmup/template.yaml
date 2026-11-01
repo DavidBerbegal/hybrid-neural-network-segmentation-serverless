@@ -1,0 +1,68 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Hibrida - Warm-up
+
+Parameters:
+  DataUrl:
+    Type: String
+
+  ModelUrl:
+    Type: String
+
+  InputLayerUrl:
+    Type: String
+
+  HiddenLayerUrl:
+    Type: String
+
+  OutputLayerUrl:
+    Type: String
+
+  TrainingUrl:
+    Type: String
+
+  PredictionUrl:
+    Type: String
+
+Resources:
+  WarmUpFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-warm-up
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      PackageType: Zip
+      CodeUri: .
+      Timeout: 120
+      MemorySize: 256
+      Architectures:
+        - x86_64
+      EphemeralStorage:
+        Size: 512
+      Environment:
+        Variables:
+          URL_DATOS: !Ref DataUrl
+          URL_MODELO: !Ref ModelUrl
+          URL_CAPA_ENTRADA: !Ref InputLayerUrl
+          URL_CAPA_OCULTA: !Ref HiddenLayerUrl
+          URL_CAPA_SALIDA: !Ref OutputLayerUrl
+          URL_ENTRENAMIENTO: !Ref TrainingUrl
+          URL_PREDICCION: !Ref PredictionUrl
+      Policies:
+        - AWSLambdaBasicExecutionRole
+      FunctionUrlConfig:
+        AuthType: NONE
+        Cors:
+          AllowOrigins:
+            - "*"
+          AllowMethods:
+            - GET
+            - POST
+
+Outputs:
+  FunctionName:
+    Value: !Ref WarmUpFunction
+
+  WarmUpUrl:
+    Description: Function URL for warm-up
+    Value: !GetAtt WarmUpFunctionUrl.FunctionUrl

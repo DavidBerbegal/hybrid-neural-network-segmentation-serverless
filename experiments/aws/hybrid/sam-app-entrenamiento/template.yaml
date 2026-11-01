@@ -1,0 +1,49 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Red Neuronal Hibrida - Entrenamiento
+
+Parameters:
+  ModelBucketName:
+    Type: String
+    Description: Bucket S3 existente para datos y modelos
+
+  ContainerTrainUrl:
+    Type: String
+    Description: URL del contenedor con la ruta /train-model
+
+Resources:
+  FuncionEntrenamiento:
+    Type: AWS::Serverless::Function
+    Properties:
+      FunctionName: funcion-entrenamiento
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      PackageType: Zip
+      CodeUri: .
+      Architectures:
+        - x86_64
+      MemorySize: 1024
+      Timeout: 900
+      EphemeralStorage:
+        Size: 512
+      Environment:
+        Variables:
+          S3_BUCKET_NAME: !Ref ModelBucketName
+          UNTRAINED_KEY: modelo_sin_entrenar.h5
+          TRAINED_KEY: modelo_entrenado.h5
+          DATOS_KEY: datos_entrenamiento.csv
+          CONTAINER_TRAIN_URL: !Ref ContainerTrainUrl
+      Policies:
+        - S3ReadPolicy:
+            BucketName: !Ref ModelBucketName
+        - S3WritePolicy:
+            BucketName: !Ref ModelBucketName
+      FunctionUrlConfig:
+        AuthType: NONE
+
+Outputs:
+  FunctionName:
+    Value: !Ref FuncionEntrenamiento
+
+  FunctionUrl:
+    Value: !GetAtt FuncionEntrenamientoUrl.FunctionUrl

@@ -1,0 +1,50 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Arquitectura AWS hibrida - Generacion de datos
+
+Parameters:
+  ModelBucketName:
+    Type: String
+    Description: Nombre del bucket S3 existente para datos y modelos
+
+  FunctionMemoryMB:
+    Type: Number
+    Default: 1024
+
+  FunctionTimeoutSeconds:
+    Type: Number
+    Default: 900
+
+  TemporaryStorageMB:
+    Type: Number
+    Default: 512
+
+Resources:
+  FuncionDatosHibrida:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: lambda_function.lambda_handler
+      Runtime: python3.11
+      PackageType: Zip
+      CodeUri: .
+      Architectures:
+        - x86_64
+      MemorySize: !Ref FunctionMemoryMB
+      Timeout: !Ref FunctionTimeoutSeconds
+      EphemeralStorage:
+        Size: !Ref TemporaryStorageMB
+      Environment:
+        Variables:
+          S3_BUCKET_NAME: !Ref ModelBucketName
+      Policies:
+        - S3WritePolicy:
+            BucketName: !Ref ModelBucketName
+      FunctionUrlConfig:
+        AuthType: NONE
+
+Outputs:
+  FunctionName:
+    Value: !Ref FuncionDatosHibrida
+
+  FunctionUrl:
+    Value: !GetAtt FuncionDatosHibridaUrl.FunctionUrl
