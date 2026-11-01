@@ -10,6 +10,7 @@ The experimental implementations cover:
 
 - AWS monolithic architecture.
 - AWS segmented architecture.
+- AWS hybrid architecture.
 - Azure monolithic architecture.
 - Azure segmented architecture.
 - Azure hybrid architecture.
@@ -23,7 +24,8 @@ The hybrid architecture is the main contribution of this repository. The monolit
 ├── experiments/
 │   ├── aws/
 │   │   ├── monolithic/
-│   │   └── segmented/
+│   │   ├── segmented/
+│   │   └── hybrid/
 │   └── azure/
 │       ├── monolithic/
 │       ├── segmented/
@@ -68,6 +70,29 @@ Main components include:
 - TensorFlow container function.
 - AWS SAM deployment templates.
 - PowerShell scripts used to invoke the deployed functions.
+
+
+### AWS hybrid
+
+`experiments/aws/hybrid/`
+
+Contains the AWS Lambda implementation of the hybrid architecture evaluated in the associated research.
+
+The implementation combines serverless orchestration with segmented neural-network components while reusing a TensorFlow container for the operations that require the Machine Learning runtime.
+
+Main components include:
+
+- Data generation function.
+- Input-layer function.
+- Hidden-layer function.
+- Output-layer function.
+- Model assembly function.
+- Training function.
+- Prediction function.
+- Warm-up function.
+- TensorFlow container function.
+- AWS SAM deployment templates.
+- PowerShell scripts used to deploy and invoke the experiment.
 
 ### Azure monolithic
 
