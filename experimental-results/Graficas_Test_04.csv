@@ -1,0 +1,568 @@
+﻿pivot;proveedor;iteracion;n_datos;arquitectura;status_code;error;error_type;is_timeout;is_oom;is_cpu_high;timeout_s;tiempo_s;cpu_inicial_percent;cpu_final_percent;memoria_inicial_mb;memoria_final_mb;memoria_consumida_mb;memoria_batch_max_mb;disk_inicial_mb;disk_final_mb;disk_consumido_mb;loss;mae;mse;mape;tiempo_preparacion;timeout_s_normalizado;tiempo_s_normalizado;cpu_inicial_percent_normalizado;cpu_final_percent_normalizado;memoria_inicial_mb_normalizado;memoria_final_mb_normalizado;memoria_consumida_mb_normalizado;memoria_batch_max_mb_normalizado;disk_inicial_mb_normalizado;disk_final_mb_normalizado;disk_consumido_mb_normalizado;loss_normalizado;mae_normalizado;mse_normalizado;mape_normalizado;tiempo_preparacion_normalizado
+300000 AZURE-segmentada;AZURE;1;300000;segmentada;200;;;;;;;73959;0;468;54518;62495;7977;;36485;38092;1607;1,66082E+16;3,32598E+15;1,66082E+16;6,08307E+15;915;0;73,959;0,468;54,518;545,18;624,95;79,77;;364,85;380,92;16,07;16,60815239;0,332597518;16,60815239;60,83070755;0,915
+300000 AZURE-monolitica;AZURE;1;300000;monolitica;200;;;;;;;36194;0;551;51809;56559;475;;34299;34303;4;1,69273E+16;3,34983E+15;1,69273E+16;6,07778E+15;132;0;36,194;0,551;51,809;518,09;565,59;4,75;;342,99;343,03;0,04;16,92727661;0,334983468;16,92727661;60,77781296;0,132
+600000 AZURE-segmentada;AZURE;2;600000;segmentada;200;;;;;;;43339;0;489;62495;6192;-575;;38092;39692;160;1,66091E+16;3,32623E+15;1,66091E+16;6,08256E+14;986;0;43,339;0,489;62,495;624,95;61,92;-5,75;;380,92;396,92;1,6;16,60905075;0,332622552;16,60905075;6,082557297;0,986
+600000 AZURE-monolitica;AZURE;2;600000;monolitica;200;;;;;;;41697;0;633;56108;58824;2716;;34303;34303;0;1,67832E+14;3,34118E+15;1,67832E+14;6,09284E+15;52;0;41,697;0,633;56,108;561,08;588,24;27,16;;343,03;343,03;0;0,167831974;0,334117937;0,167831974;60,92837143;0,052
+900000 AZURE-segmentada;AZURE;3;900000;segmentada;200;;;;;;;44374;0;486;62381;65791;341;;39692;41293;1601;1,66092E+16;3,32624E+14;1,66092E+16;6,0822E+15;1877;0;44,374;0,486;62,381;623,81;657,91;3,41;;396,92;412,93;16,01;16,60924911;0,033262355;16,60924911;60,82201385;1,877
+900000 AZURE-monolitica;AZURE;3;900000;monolitica;200;;;;;;;41861;0;410;58789;65896;7107;;34303;34303;0;1,67885E+16;3,34334E+15;1,67885E+16;6,1336E+15;49;0;41,861;0,41;58,789;587,89;658,96;71,07;;343,03;343,03;0;16,78848076;0,33433392;16,78848076;61,33600616;0,049
+1200000 AZURE-segmentada;AZURE;4;1200000;segmentada;200;;;;;;;44896;0;464;63034;62672;-362;;41293;42893;160;1,66095E+16;3,32616E+16;1,66095E+16;6,08312E+16;2532;0;44,896;0,464;63,034;630,34;626,72;-3,62;;412,93;428,93;1,6;16,60949516;3,326158762;16,60949516;608,3115387;2,532
+1200000 AZURE-monolitica;AZURE;4;1200000;monolitica;200;;;;;;;41668;0;422;65917;64295;-1622;;34303;34303;0;1,67524E+14;3,3401E+15;1,67524E+14;6,12145E+16;55;0;41,668;0,422;65,917;659,17;642,95;-16,22;;343,03;343,03;0;0,167524471;0,334010005;0,167524471;612,1450806;0,055
+1500000 AZURE-segmentada;AZURE;5;1500000;segmentada;200;;;;;;;45967;0;452;6280;63969;1169;;42893;44494;160;1,66092E+16;3,32617E+15;1,66092E+16;6,083E+16;3556;0;45,967;0,452;6,28;62,8;639,69;11,69;;428,93;444,94;1,6;16,60923576;0,332616973;16,60923576;608,2995224;3,556
+1500000 AZURE-monolitica;AZURE;5;1500000;monolitica;200;;;;;;;82604;0;422;64295;67372;3077;;34303;34303;0;1,69929E+16;3,3418E+15;1,69929E+16;6,1403E+14;56;0;82,604;0,422;64,295;642,95;673,72;30,77;;343,03;343,03;0;16,99286842;0,334179711;16,99286842;6,140296555;0,056
+1800000 AZURE-segmentada;AZURE;6;1800000;segmentada;200;;;;;;;48256;0;445;63969;64891;922;;44494;46094;160;1,66095E+15;3,32614E+16;1,66095E+15;6,08323E+16;5504;0;48,256;0,445;63,969;639,69;648,91;9,22;;444,94;460,94;1,6;1,660947037;3,326137781;1,660947037;608,3227158;5,504
+1800000 AZURE-monolitica;AZURE;6;1800000;monolitica;200;;;;;;;82653;0;419;67372;71955;4583;;34303;34303;0;1,67298E+15;3,33818E+15;1,67298E+15;6,14016E+15;7;0;82,653;0,419;67,372;673,72;719,55;45,83;;343,03;343,03;0;1,672975731;0,33381815;1,672975731;61,40159225;0,007
+2100000 AZURE-segmentada;AZURE;7;2100000;segmentada;200;;;;;;;47493;0;459;6537;66713;1343;;46094;47694;160;1,66094E+16;3,3262E+16;1,66094E+16;6,08245E+16;5042;0;47,493;0,459;6,537;65,37;667,13;13,43;;460,94;476,94;1,6;16,60943985;3,326199055;16,60943985;608,2452774;5,042
+2100000 AZURE-monolitica;AZURE;7;2100000;monolitica;200;;;;;;;82643;0;427;70129;7899;8861;;34303;34303;0;1,6724E+15;3,33797E+16;1,6724E+15;6,1499E+15;73;0;82,643;0,427;70,129;701,29;78,99;88,61;;343,03;343,03;0;1,672397232;3,337974548;1,672397232;61,4990387;0,073
+2400000 AZURE-segmentada;AZURE;8;2400000;segmentada;200;;;;;;;47634;0;479;66962;67655;693;;47694;49295;160;1,66091E+16;3,32618E+16;1,66091E+16;6,08285E+16;4894;0;47,634;0,479;66,962;669,62;676,55;6,93;;476,94;492,95;1,6;16,60911369;3,326182842;16,60911369;608,285141;4,894
+2400000 AZURE-monolitica;AZURE;8;2400000;monolitica;200;;;;;;;142693;0;451;76435;79512;3077;;34303;34303;0;1,67367E+16;3,33701E+16;1,67367E+16;6,13746E+15;75;0;142,693;0,451;76,435;764,35;795,12;30,77;;343,03;343,03;0;16,73673248;3,337008715;16,73673248;61,37460709;0,075
+2700000 AZURE-segmentada;AZURE;9;2700000;segmentada;200;;;;;;;48499;0;459;64923;69688;4765;;49295;50895;160;1,66081E+15;3,32599E+15;1,66081E+15;6,08176E+15;5082;0;48,499;0,459;64,923;649,23;696,88;47,65;;492,95;508,95;1,6;1,660810661;0,332598901;1,660810661;60,81761169;5,082
+2700000 AZURE-monolitica;AZURE;9;2700000;monolitica;200;;;;;;;142821;0;418;75867;95477;1961;;34303;34303;0;1,67949E+16;3,33989E+15;1,67949E+16;6,14147E+15;8;0;142,821;0,418;75,867;758,67;954,77;19,61;;343,03;343,03;0;16,7948513;0,333989072;16,7948513;61,41474533;0,008
+3000000 AZURE-segmentada;AZURE;10;3000000;segmentada;200;;;;;;;49042;0;454;66497;65771;-726;;50895;52496;160;1,66094E+16;3,32618E+16;1,66094E+16;6,08284E+15;5984;0;49,042;0,454;66,497;664,97;657,71;-7,26;;508,95;524,96;1,6;16,60942459;3,326175213;16,60942459;60,82844162;5,984
+3000000 AZURE-monolitica;AZURE;10;3000000;monolitica;200;;;;;;;142652;0;416;95477;93699;-1778;;34303;34303;0;1,66974E+16;3,33546E+16;1,66974E+16;6,14339E+16;73;0;142,652;0,416;95,477;954,77;936,99;-17,78;;343,03;343,03;0;16,69742584;3,33546257;16,69742584;614,3392944;0,073
+3300000 AZURE-segmentada;AZURE;11;3300000;segmentada;200;;;;;;;50446;0;460;6693;70762;3832;;52496;54096;1601;1,66083E+16;3,32614E+15;1,66083E+16;6,08228E+15;6632;0;50,446;0,46;6,693;66,93;707,62;38,32;;524,96;540,96;16,01;16,60834694;0,332613945;16,60834694;60,82282639;6,632
+3300000 AZURE-monolitica;AZURE;11;3300000;monolitica;200;;;;;;;142674;0;594;94412;100102;569;;34303;34303;0;1,66976E+15;3,33545E+16;1,66976E+15;6,14361E+15;81;0;142,674;0,594;94,412;944,12;1001,02;5,69;;343,03;343,03;0;1,669757652;3,335452318;1,669757652;61,43607712;0,081
+3600000 AZURE-segmentada;AZURE;12;3600000;segmentada;200;;;;;;;53922;0;438;71036;71503;467;;54096;55696;160;1,66088E+16;3,32608E+16;1,66088E+16;6,08264E+15;10867;0;53,922;0,438;71,036;710,36;715,03;4,67;;540,96;556,96;1,6;16,60879326;3,326081514;16,60879326;60,82637405;10,867
+3600000 AZURE-monolitica;AZURE;12;3600000;monolitica;200;;;;;;;14302;0;317;100102;113841;13739;;34303;34303;0;1,66927E+16;3,33494E+16;1,66927E+16;6,1427E+16;98;0;14,302;0,317;100,102;1001,02;1138,41;137,39;;343,03;343,03;0;16,69270515;3,334941149;16,69270515;614,2699814;0,098
+3900000 AZURE-segmentada;AZURE;13;3900000;segmentada;200;;;;;;;51157;0;448;72132;68347;-3785;;55696;57297;160;1,66095E+14;3,32616E+16;1,66095E+14;6,08293E+15;8123;0;51,157;0,448;72,132;721,32;683,47;-37,85;;556,96;572,97;1,6;0,166094913;3,326156616;0,166094913;60,8292923;8,123
+3900000 AZURE-monolitica;AZURE;13;3900000;monolitica;200;;;;;;;142787;0;292;113841;97561;-1628;;34303;34303;0;1,66916E+16;3,33505E+15;1,66916E+16;6,1427E+15;123;0;142,787;0,292;113,841;1138,41;975,61;-16,28;;343,03;343,03;0;16,69161987;0,333505034;16,69161987;61,42695236;0,123
+4200000 AZURE-segmentada;AZURE;14;4200000;segmentada;200;;;;;;;52448;0;513;68347;72783;4436;;57297;58897;160;1,66088E+16;3,32613E+16;1,66088E+16;6,08245E+16;9364;0;52,448;0,513;68,347;683,47;727,83;44,36;;572,97;588,97;1,6;16,60880661;3,326131105;16,60880661;608,2446671;9,364
+4200000 AZURE-monolitica;AZURE;14;4200000;monolitica;200;;;;;;;202701;0;378;93298;106851;13553;;34303;34303;0;1,70078E+16;3,33751E+15;1,70078E+16;6,1434E+15;101;0;202,701;0,378;93,298;932,98;1068,51;135,53;;343,03;343,03;0;17,00784111;0,333750987;17,00784111;61,43403625;0,101
+4500000 AZURE-segmentada;AZURE;15;4500000;segmentada;200;;;;;;;54785;0;429;74364;71415;-2949;;58897;60498;160;1,66083E+15;3,3261E+16;1,66083E+15;6,08304E+16;11754;0;54,785;0,429;74,364;743,64;714,15;-29,49;;588,97;604,98;1,6;1,6608284;3,326099634;1,6608284;608,3035278;11,754
+4500000 AZURE-monolitica;AZURE;15;4500000;monolitica;200;;;;;;;202907;0;340;101304;102767;1463;;34303;34303;0;1,66972E+16;3,33607E+16;1,66972E+16;6,13723E+15;115;0;202,907;0,34;101,304;1013,04;1027,67;14,63;;343,03;343,03;0;16,69722939;3,336074591;16,69722939;61,37228775;0,115
+4800000 AZURE-segmentada;AZURE;16;4800000;segmentada;200;;;;;;;47636;0;364;54752;60456;5704;;36485;62098;25614;1,66085E+16;3,32617E+15;1,66085E+16;6,08261E+16;8171;0;47,636;0,364;54,752;547,52;604,56;57,04;;364,85;620,98;256,14;16,60848808;0,332616735;16,60848808;608,2608032;8,171
+4800000 AZURE-monolitica;AZURE;16;4800000;monolitica;200;;;;;;;202747;0;326;9652;114341;17821;;34303;34303;0;1,66936E+16;3,33556E+15;1,66936E+16;6,14346E+15;127;0;202,747;0,326;9,652;96,52;1143,41;178,21;;343,03;343,03;0;16,69355774;0,33355639;16,69355774;61,43463898;0,127
+5100000 AZURE-segmentada;AZURE;17;5100000;segmentada;200;;;;;;;30902;0;347;60193;61533;134;;62098;63699;160;1,66089E+15;3,32609E+15;1,66089E+15;6,08303E+16;8805;0;30,902;0,347;60,193;601,93;615,33;1,34;;620,98;636,99;1,6;1,660886574;0,332608509;1,660886574;608,3029175;8,805
+5100000 AZURE-monolitica;AZURE;17;5100000;monolitica;200;;;;;;;202727;0;433;107709;10855;841;;34303;34303;0;1,6701E+14;3,3366E+16;1,6701E+14;6,13958E+16;112;0;202,727;0,433;107,709;1077,09;108,55;8,41;;343,03;343,03;0;0,167010498;3,336598873;0,167010498;613,958168;0,112
+5400000 AZURE-segmentada;AZURE;18;5400000;segmentada;200;;;;;;;62441;0;559;54582;60566;5984;;36485;65299;28814;1,6609E+15;3,32617E+15;1,6609E+15;6,08233E+15;12115;0;62,441;0,559;54,582;545,82;605,66;59,84;;364,85;652,99;288,14;1,660897446;0,332617402;1,660897446;60,82334518;12,115
+5400000 AZURE-monolitica;AZURE;18;5400000;monolitica;200;;;;;;;202953;0;527;100979;11346;12481;;34303;34303;0;1,84162E+16;1,85737E+16;1,84162E+16;2,7609E+16;149;0;202,953;0,527;100,979;1009,79;113,46;124,81;;343,03;343,03;0;18,41618717;1,857371479;18,41618717;276,0896206;0,149
+5700000 AZURE-segmentada;AZURE;19;5700000;segmentada;200;;;;;;;34987;0;543;60464;61811;1347;;65299;66899;160;1,66088E+16;3,32618E+15;1,66088E+16;6,08299E+15;12542;0;34,987;0,543;60,464;604,64;618,11;13,47;;652,99;668,99;1,6;16,60877419;0,332618403;16,60877419;60,82986832;12,542
+5700000 AZURE-monolitica;AZURE;19;5700000;monolitica;200;;;;;;;202768;0;560;105818;111076;5258;;34303;34303;0;1,66941E+15;3,33612E+15;1,66941E+15;6,13986E+15;146;0;202,768;0,56;105,818;1058,18;1110,76;52,58;;343,03;343,03;0;1,669407845;0,333612108;1,669407845;61,39855194;0,146
+6000000 AZURE-segmentada;AZURE;20;6000000;segmentada;200;;;;;;;48335;0;353;54773;60301;5528;;36486;68501;32015;1,66088E+15;3,32606E+16;1,66088E+15;6,0825E+15;102;0;48,335;0,353;54,773;547,73;603,01;55,28;;364,86;685,01;320,15;1,660883331;3,326057673;1,660883331;60,82496643;0,102
+6000000 AZURE-monolitica;AZURE;20;6000000;monolitica;504;504.0 GatewayTimeout;timeout;1;0;0;;240061;;;;;;;;;;;;;;;0;240,061;0;0;0;0;0;;0;0;0;0;0;0;0;0
+300000 AWS-segmentada;AWS;1;300000;segmentada;502;Internal Server Error;other;0;0;0;;7743;;;;;;;;;;;;;;;0;7,743;0;0;0;0;0;;0;0;0;0;0;0;0;0
+300000 AWS-monolitica;AWS;1;300000;monolitica;500;"{""error"": ""Error entrenando modelo en contenedor: 502 Server Error: Bad Gateway for url: ""}";other;0;0;0;;10422;;;;;;;;;;;;;;;0;10,422;0;0;0;0;0;;0;0;0;0;0;0;0;0
+600000 AWS-segmentada;AWS;2;600000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.061,
+    ""descargar_csv_s"": 0.525,
+    ""cargar_csv_s"": 2.069,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.094,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 57.3,
+    ""memoria_inicial_mb"": 258.71,
+    ""memoria_final_mb"": 282.18,
+    ""memoria_consumida_mb"": 23.47,
+    ""disk_inicial_mb"": 16.04,
+    ""disk_final_mb"": 32.04,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 5.529
+  }
+}";other;0;0;0;;5685;;;;;;;;;;;;;;;0;5,685;0;0;0;0;0;;0;0;0;0;0;0;0;0
+600000 AWS-monolitica;AWS;2;600000;monolitica;500;"{""error"": ""Error entrenando modelo en contenedor: 502 Server Error: Bad Gateway for url: ""}";other;0;0;0;;5786;;;;;;;;;;;;;;;0;5,786;0;0;0;0;0;;0;0;0;0;0;0;0;0
+900000 AWS-segmentada;AWS;3;900000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.064,
+    ""descargar_csv_s"": 0.645,
+    ""cargar_csv_s"": 1.861,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.099,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 57.2,
+    ""memoria_inicial_mb"": 87.41,
+    ""memoria_final_mb"": 303.89,
+    ""memoria_consumida_mb"": 216.47,
+    ""disk_inicial_mb"": 32.04,
+    ""disk_final_mb"": 48.05,
+    ""disk_consumido_mb"": 16.01,
+    ""total_s"": 5.434
+  }
+}";other;0;0;0;;5593;;;;;;;;;;;;;;;0;5,593;0;0;0;0;0;;0;0;0;0;0;0;0;0
+900000 AWS-monolitica;AWS;3;900000;monolitica;500;"{""error"": ""Error entrenando modelo en contenedor: 502 Server Error: Bad Gateway for url: ""}";other;0;0;0;;8768;;;;;;;;;;;;;;;0;8,768;0;0;0;0;0;;0;0;0;0;0;0;0;0
+1200000 AWS-segmentada;AWS;4;1200000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.082,
+    ""descargar_csv_s"": 0.847,
+    ""cargar_csv_s"": 2.03,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.032,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 56.9,
+    ""memoria_inicial_mb"": 95.09,
+    ""memoria_final_mb"": 314.78,
+    ""memoria_consumida_mb"": 219.69,
+    ""disk_inicial_mb"": 48.05,
+    ""disk_final_mb"": 64.05,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 5.558
+  }
+}";other;0;0;0;;5714;;;;;;;;;;;;;;;0;5,714;0;0;0;0;0;;0;0;0;0;0;0;0;0
+1200000 AWS-monolitica;AWS;4;1200000;monolitica;500;"{""error"": ""Error entrenando modelo en contenedor: 502 Server Error: Bad Gateway for url: ""}";other;0;0;0;;10922;;;;;;;;;;;;;;;0;10,922;0;0;0;0;0;;0;0;0;0;0;0;0;0
+1500000 AWS-segmentada;AWS;5;1500000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.069,
+    ""descargar_csv_s"": 1.077,
+    ""cargar_csv_s"": 2.062,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.049,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 57.1,
+    ""memoria_inicial_mb"": 108.44,
+    ""memoria_final_mb"": 323.2,
+    ""memoria_consumida_mb"": 214.75,
+    ""disk_inicial_mb"": 64.05,
+    ""disk_final_mb"": 80.06,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 6.038
+  }
+}";other;0;0;0;;6178;;;;;;;;;;;;;;;0;6,178;0;0;0;0;0;;0;0;0;0;0;0;0;0
+1500000 AWS-monolitica;AWS;5;1500000;monolitica;500;"{""error"": ""Error entrenando modelo en contenedor: 502 Server Error: Bad Gateway for url: ""}";other;0;0;0;;13906;;;;;;;;;;;;;;;0;13,906;0;0;0;0;0;;0;0;0;0;0;0;0;0
+1800000 AWS-segmentada;AWS;6;1800000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.048,
+    ""descargar_csv_s"": 1.265,
+    ""cargar_csv_s"": 1.976,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.03,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 57.2,
+    ""memoria_inicial_mb"": 119.74,
+    ""memoria_final_mb"": 340.09,
+    ""memoria_consumida_mb"": 220.35,
+    ""disk_inicial_mb"": 80.06,
+    ""disk_final_mb"": 96.06,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 6.1
+  }
+}";other;0;0;0;;6263;;;;;;;;;;;;;;;0;6,263;0;0;0;0;0;;0;0;0;0;0;0;0;0
+1800000 AWS-monolitica;AWS;6;1800000;monolitica;500;"{""error"": ""Error entrenando modelo en contenedor: 502 Server Error: Bad Gateway for url: ""}";other;0;0;0;;1637;;;;;;;;;;;;;;;0;1,637;0;0;0;0;0;;0;0;0;0;0;0;0;0
+2100000 AWS-segmentada;AWS;7;2100000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.064,
+    ""descargar_csv_s"": 1.504,
+    ""cargar_csv_s"": 1.842,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.049,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 57.1,
+    ""memoria_inicial_mb"": 139.84,
+    ""memoria_final_mb"": 344.53,
+    ""memoria_consumida_mb"": 204.69,
+    ""disk_inicial_mb"": 96.06,
+    ""disk_final_mb"": 112.06,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 6.239
+  }
+}";other;0;0;0;;6394;;;;;;;;;;;;;;;0;6,394;0;0;0;0;0;;0;0;0;0;0;0;0;0
+2100000 AWS-monolitica;AWS;7;2100000;monolitica;500;"{""error"": ""Error entrenando modelo en contenedor: 502 Server Error: Bad Gateway for url: ""}";other;0;0;0;;18981;;;;;;;;;;;;;;;0;18,981;0;0;0;0;0;;0;0;0;0;0;0;0;0
+2400000 AWS-segmentada;AWS;8;2400000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.069,
+    ""descargar_csv_s"": 1.589,
+    ""cargar_csv_s"": 1.982,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.044,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 57.1,
+    ""memoria_inicial_mb"": 148.78,
+    ""memoria_final_mb"": 349.97,
+    ""memoria_consumida_mb"": 201.19,
+    ""disk_inicial_mb"": 112.06,
+    ""disk_final_mb"": 128.07,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 6.443
+  }
+}";other;0;0;0;;6594;;;;;;;;;;;;;;;0;6,594;0;0;0;0;0;;0;0;0;0;0;0;0;0
+2400000 AWS-monolitica;AWS;8;2400000;monolitica;502;Internal Server Error;other;0;0;0;;2091;;;;;;;;;;;;;;;0;2,091;0;0;0;0;0;;0;0;0;0;0;0;0;0
+2700000 AWS-segmentada;AWS;9;2700000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.077,
+    ""descargar_csv_s"": 1.754,
+    ""cargar_csv_s"": 2.042,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.039,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 57.2,
+    ""memoria_inicial_mb"": 156.44,
+    ""memoria_final_mb"": 350.72,
+    ""memoria_consumida_mb"": 194.29,
+    ""disk_inicial_mb"": 128.07,
+    ""disk_final_mb"": 144.07,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 6.699
+  }
+}";other;0;0;0;;6856;;;;;;;;;;;;;;;0;6,856;0;0;0;0;0;;0;0;0;0;0;0;0;0
+2700000 AWS-monolitica;AWS;9;2700000;monolitica;502;Internal Server Error;other;0;0;0;;24879;;;;;;;;;;;;;;;0;24,879;0;0;0;0;0;;0;0;0;0;0;0;0;0
+3000000 AWS-segmentada;AWS;10;3000000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.06,
+    ""descargar_csv_s"": 1.942,
+    ""cargar_csv_s"": 2.007,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.082,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 57.1,
+    ""memoria_inicial_mb"": 159.06,
+    ""memoria_final_mb"": 352.94,
+    ""memoria_consumida_mb"": 193.88,
+    ""disk_inicial_mb"": 144.07,
+    ""disk_final_mb"": 160.08,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 6.868
+  }
+}";other;0;0;0;;7019;;;;;;;;;;;;;;;0;7,019;0;0;0;0;0;;0;0;0;0;0;0;0;0
+3000000 AWS-monolitica;AWS;10;3000000;monolitica;;HTTPSConnectionPool(host='', port=443): Read timed out. (read timeout=600);timeout;1;0;0;600;600008;;;;;;;;;;;;;;;600;600,008;0;0;0;0;0;;0;0;0;0;0;0;0;0
+3300000 AWS-segmentada;AWS;11;3300000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.069,
+    ""descargar_csv_s"": 2.4,
+    ""cargar_csv_s"": 2.287,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.205,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 56.2,
+    ""memoria_inicial_mb"": 68.08,
+    ""memoria_final_mb"": 292.0,
+    ""memoria_consumida_mb"": 223.92,
+    ""disk_inicial_mb"": 0.0,
+    ""disk_final_mb"": 176.08,
+    ""disk_consumido_mb"": 176.08,
+    ""total_s"": 7.604
+  }
+}";other;0;0;0;;9635;;;;;;;;;;;;;;;0;9,635;0;0;0;0;0;;0;0;0;0;0;0;0;0
+3300000 AWS-monolitica;AWS;11;3300000;monolitica;502;Internal Server Error;other;0;0;0;;20197;;;;;;;;;;;;;;;0;20,197;0;0;0;0;0;;0;0;0;0;0;0;0;0
+3600000 AWS-segmentada;AWS;12;3600000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.129,
+    ""descargar_csv_s"": 2.406,
+    ""cargar_csv_s"": 2.062,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.109,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 55.2,
+    ""memoria_inicial_mb"": 123.64,
+    ""memoria_final_mb"": 332.26,
+    ""memoria_consumida_mb"": 208.61,
+    ""disk_inicial_mb"": 176.08,
+    ""disk_final_mb"": 192.08,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 7.446
+  }
+}";other;0;0;0;;7599;;;;;;;;;;;;;;;0;7,599;0;0;0;0;0;;0;0;0;0;0;0;0;0
+3600000 AWS-monolitica;AWS;12;3600000;monolitica;502;Internal Server Error;other;0;0;0;;6463;;;;;;;;;;;;;;;0;6,463;0;0;0;0;0;;0;0;0;0;0;0;0;0
+3900000 AWS-segmentada;AWS;13;3900000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.072,
+    ""descargar_csv_s"": 2.495,
+    ""cargar_csv_s"": 2.104,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.123,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 56.2,
+    ""memoria_inicial_mb"": 137.73,
+    ""memoria_final_mb"": 353.91,
+    ""memoria_consumida_mb"": 216.18,
+    ""disk_inicial_mb"": 192.08,
+    ""disk_final_mb"": 208.09,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 7.568
+  }
+}";other;0;0;0;;7733;;;;;;;;;;;;;;;0;7,733;0;0;0;0;0;;0;0;0;0;0;0;0;0
+3900000 AWS-monolitica;AWS;13;3900000;monolitica;502;Internal Server Error;other;0;0;0;;10762;;;;;;;;;;;;;;;0;10,762;0;0;0;0;0;;0;0;0;0;0;0;0;0
+4200000 AWS-segmentada;AWS;14;4200000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.067,
+    ""descargar_csv_s"": 2.644,
+    ""cargar_csv_s"": 1.996,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.093,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 56.0,
+    ""memoria_inicial_mb"": 144.25,
+    ""memoria_final_mb"": 354.03,
+    ""memoria_consumida_mb"": 209.78,
+    ""disk_inicial_mb"": 208.09,
+    ""disk_final_mb"": 224.09,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 7.54
+  }
+}";other;0;0;0;;7698;;;;;;;;;;;;;;;0;7,698;0;0;0;0;0;;0;0;0;0;0;0;0;0
+4200000 AWS-monolitica;AWS;14;4200000;monolitica;502;Internal Server Error;other;0;0;0;;24013;;;;;;;;;;;;;;;0;24,013;0;0;0;0;0;;0;0;0;0;0;0;0;0
+4500000 AWS-segmentada;AWS;15;4500000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.074,
+    ""descargar_csv_s"": 2.722,
+    ""cargar_csv_s"": 2.087,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.102,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 56.2,
+    ""memoria_inicial_mb"": 147.77,
+    ""memoria_final_mb"": 360.68,
+    ""memoria_consumida_mb"": 212.91,
+    ""disk_inicial_mb"": 224.09,
+    ""disk_final_mb"": 240.1,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 7.756
+  }
+}";other;0;0;0;;7923;;;;;;;;;;;;;;;0;7,923;0;0;0;0;0;;0;0;0;0;0;0;0;0
+4500000 AWS-monolitica;AWS;15;4500000;monolitica;502;Internal Server Error;other;0;0;0;;9292;;;;;;;;;;;;;;;0;9,292;0;0;0;0;0;;0;0;0;0;0;0;0;0
+4800000 AWS-segmentada;AWS;16;4800000;segmentada;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.07,
+    ""descargar_csv_s"": 3.07,
+    ""cargar_csv_s"": 2.103,
+    ""compilar_modelo_s"": 0.0,
+    ""entrenamiento_s"": 2.084,
+    ""cpu_inicial_percent"": 0.0,
+    ""cpu_final_percent"": 56.1,
+    ""memoria_inicial_mb"": 157.62,
+    ""memoria_final_mb"": 361.25,
+    ""memoria_consumida_mb"": 203.63,
+    ""disk_inicial_mb"": 240.1,
+    ""disk_final_mb"": 256.1,
+    ""disk_consumido_mb"": 16.0,
+    ""total_s"": 8.088
+  }
+}";other;0;0;0;;8246;;;;;;;;;;;;;;;0;8,246;0;0;0;0;0;;0;0;0;0;0;0;0;0
+4800000 AWS-monolitica;AWS;16;4800000;monolitica;502;Internal Server Error;other;0;0;0;;885;;;;;;;;;;;;;;;0;0,885;0;0;0;0;0;;0;0;0;0;0;0;0;0
+5100000 AWS-segmentada;AWS;17;5100000;segmentada;502;Internal Server Error;other;0;0;0;;3082;;;;;;;;;;;;;;;0;3,082;0;0;0;0;0;;0;0;0;0;0;0;0;0
+5100000 AWS-monolitica;AWS;17;5100000;monolitica;502;Internal Server Error;other;0;0;0;;10574;;;;;;;;;;;;;;;0;10,574;0;0;0;0;0;;0;0;0;0;0;0;0;0
+5400000 AWS-segmentada;AWS;18;5400000;segmentada;502;Internal Server Error;other;0;0;0;;3525;;;;;;;;;;;;;;;0;3,525;0;0;0;0;0;;0;0;0;0;0;0;0;0
+5400000 AWS-monolitica;AWS;18;5400000;monolitica;502;Internal Server Error;other;0;0;0;;1039;;;;;;;;;;;;;;;0;1,039;0;0;0;0;0;;0;0;0;0;0;0;0;0
+5700000 AWS-segmentada;AWS;19;5700000;segmentada;502;Internal Server Error;other;0;0;0;;3503;;;;;;;;;;;;;;;0;3,503;0;0;0;0;0;;0;0;0;0;0;0;0;0
+5700000 AWS-monolitica;AWS;19;5700000;monolitica;502;Internal Server Error;other;0;0;0;;14939;;;;;;;;;;;;;;;0;14,939;0;0;0;0;0;;0;0;0;0;0;0;0;0
+6000000 AWS-segmentada;AWS;20;6000000;segmentada;502;Internal Server Error;other;0;0;0;;3614;;;;;;;;;;;;;;;0;3,614;0;0;0;0;0;;0;0;0;0;0;0;0;0
+6000000 AWS-monolitica;AWS;20;6000000;monolitica;502;Internal Server Error;other;0;0;0;;69632;;;;;;;;;;;;;;;0;69,632;0;0;0;0;0;;0;0;0;0;0;0;0;0
+300000 AZURE-hibrida;AZURE;1;300000;hibrida;200;;;;;;;37831;0;974;56446;6263;6184;;3;1613;161;6,03582E+15;1,77113E+16;6,03582E+15;2,96975E+16;305;;37,831;0,974;56,446;564,46;62,63;61,84;;0,03;16,13;1,61;6,035820007;1,771129012;6,035820007;296,9754028;0,305
+600000 AZURE-hibrida;AZURE;2;600000;hibrida;200;;;;;;;219;0;965;6263;63407;777;;1613;3217;1604;2,25178E+16;1,15356E+15;2,25178E+16;1,99688E+16;828;;0,219;0,965;6,263;62,63;634,07;7,77;;16,13;32,17;16,04;22,51784801;0,115355837;22,51784801;199,6876144;0,828
+900000 AZURE-hibrida;AZURE;3;900000;hibrida;200;;;;;;;22783;0;948;63407;63928;521;;3217;4817;1601;1,78143E+16;1,0121E+15;1,78143E+16;1,74229E+15;1372;;22,783;0,948;63,407;634,07;639,28;5,21;;32,17;48,17;16,01;17,81425595;0,101210117;17,81425595;17,4229393;1,372
+1200000 AZURE-hibrida;AZURE;4;1200000;hibrida;200;;;;;;;22386;0;927;63928;65308;138;;4817;6417;160;1,58427E+16;9,45411E+15;1,58427E+16;1,64709E+16;1837;;22,386;0,927;63,928;639,28;653,08;1,38;;48,17;64,17;1,6;15,8426559;0,945410728;15,8426559;164,7086716;1,837
+1500000 AZURE-hibrida;AZURE;5;1500000;hibrida;200;;;;;;;24483;0;929;65308;66834;1526;;6417;8018;160;9,28156E+15;7,17416E+15;9,28156E+15;1,18674E+16;1797;;24,483;0,929;65,308;653,08;668,34;15,26;;64,17;80,18;1,6;9,281557202;0,717416227;9,281557202;118,6738205;1,797
+1800000 AZURE-hibrida;AZURE;6;1800000;hibrida;200;;;;;;;26741;0;906;66834;6785;1016;;8018;9618;160;6,77621E+15;6,38301E+15;6,77621E+15;1,00171E+16;2662;;26,741;0,906;66,834;668,34;67,85;10,16;;80,18;96,18;1,6;6,776206493;0,638301313;6,776206493;100,1706791;2,662
+2100000 AZURE-hibrida;AZURE;7;2100000;hibrida;200;;;;;;;23621;0;889;6785;68607;757;;9618;11219;160;5,35179E+15;5,67618E+15;5,35179E+15;8,76976E+14;2949;;23,621;0,889;6,785;67,85;686,07;7,57;;96,18;112,19;1,6;5,351786613;0,567617774;5,351786613;8,769762039;2,949
+2400000 AZURE-hibrida;AZURE;8;2400000;hibrida;200;;;;;;;24303;0;872;68607;68809;202;;11219;12819;160;4,70154E+15;5,37008E+15;4,70154E+15;8,34144E+14;3429;;24,303;0,872;68,607;686,07;688,09;2,02;;112,19;128,19;1,6;4,701543152;0,53700757;4,701543152;8,341444016;3,429
+2700000 AZURE-hibrida;AZURE;9;2700000;hibrida;200;;;;;;;27455;0;869;68809;66186;-2623;;12819;1442;160;4,39405E+16;5,20373E+15;4,39405E+16;8,13184E+15;4347;;27,455;0,869;68,809;688,09;661,86;-26,23;;128,19;14,42;1,6;43,94048452;0,520372808;43,94048452;81,3184166;4,347
+3000000 AZURE-hibrida;AZURE;10;3000000;hibrida;200;;;;;;;24845;0;851;66186;6710;914;;1442;1602;160;4,14884E+16;5,06354E+15;4,14884E+16;7,89657E+15;4253;;24,845;0,851;66,186;661,86;67,1;9,14;;14,42;16,02;1,6;41,48839712;0,506353974;41,48839712;78,96568298;4,253
+3300000 AZURE-hibrida;AZURE;11;3300000;hibrida;200;;;;;;;24453;0;845;6710;68083;983;;1602;1762;1601;4,01288E+16;4,91016E+16;4,01288E+16;7,748E+15;4448;;24,453;0,845;6,71;67,1;680,83;9,83;;16,02;17,62;16,01;40,12876153;4,910162985;40,12876153;77,47997284;4,448
+3600000 AZURE-hibrida;AZURE;12;3600000;hibrida;200;;;;;;;25762;0;829;68083;69143;106;;1762;19221;160;3,86325E+16;4,91102E+15;3,86325E+16;7,75053E+15;5129;;25,762;0,829;68,083;680,83;691,43;1,06;;17,62;192,21;1,6;38,63247931;0,491102189;38,63247931;77,50529766;5,129
+3900000 AZURE-hibrida;AZURE;13;3900000;hibrida;200;;;;;;;27597;0;833;69143;7157;2427;;19221;20821;160;3,73828E+16;4,75615E+15;3,73828E+16;7,56707E+15;5317;;27,597;0,833;69,143;691,43;71,57;24,27;;192,21;208,21;1,6;37,38278747;0,475615054;37,38278747;75,67074776;5,317
+4200000 AZURE-hibrida;AZURE;14;4200000;hibrida;200;;;;;;;29027;0;828;7157;71654;84;;20821;22422;160;3,6792E+15;4,71295E+15;3,6792E+15;7,5136E+15;573;;29,027;0,828;7,157;71,57;716,54;0,84;;208,21;224,22;1,6;3,679203689;0,471294522;3,679203689;75,13604164;0,573
+4500000 AZURE-hibrida;AZURE;15;4500000;hibrida;200;;;;;;;28838;0;826;71654;74189;2535;;22422;24022;160;3,71419E+16;4,73072E+16;3,71419E+16;7,54122E+15;5851;;28,838;0,826;71,654;716,54;741,89;25,35;;224,22;240,22;1,6;37,14189231;4,730722308;37,14189231;75,41215897;5,851
+4800000 AZURE-hibrida;AZURE;16;4800000;hibrida;200;;;;;;;28603;0;808;74189;71225;-2964;;24022;25623;160;3,54931E+15;4,61162E+16;3,54931E+15;7,37275E+15;6721;;28,603;0,808;74,189;741,89;712,25;-29,64;;240,22;256,23;1,6;3,549312651;4,611621499;3,549312651;73,72751713;6,721
+5100000 AZURE-hibrida;AZURE;17;5100000;hibrida;200;;;;;;;26609;0;805;71225;7172;495;;25623;27223;160;3,45097E+16;4,44093E+16;3,45097E+16;7,13536E+14;6181;;26,609;0,805;71,225;712,25;71,72;4,95;;256,23;272,23;1,6;34,5097214;4,440930784;34,5097214;7,13535738;6,181
+5400000 AZURE-hibrida;AZURE;18;5400000;hibrida;200;;;;;;;27692;0;763;73059;72953;-106;;27223;28823;160;3,07516E+16;4,28869E+15;3,07516E+16;6,85336E+15;7709;;27,692;0,763;73,059;730,59;729,53;-1,06;;272,23;288,23;1,6;30,75158298;0,428869396;30,75158298;68,53363991;7,709
+5700000 AZURE-hibrida;AZURE;19;5700000;hibrida;200;;;;;;;27931;0;782;73288;69829;-3459;;28823;30424;160;2,90542E+15;4,04535E+16;2,90542E+15;6,46255E+15;7162;;27,931;0,782;73,288;732,88;698,29;-34,59;;288,23;304,24;1,6;2,905424237;4,045345485;2,905424237;64,6255064;7,162
+6000000 AZURE-hibrida;AZURE;20;6000000;hibrida;200;;;;;;;2977;0;763;69835;66843;-2992;;30424;32024;160;2,94899E+15;4,05406E+15;2,94899E+15;6,54268E+15;8221;;2,977;0,763;69,835;698,35;668,43;-29,92;;304,24;320,24;1,6;2,948992848;0,405406207;2,948992848;65,42680264;8,221
+300000 AWS-hibrida;AWS;1;300000;hibrida;500;"{
+  ""error"": ""('Connection broken: IncompleteRead(0 bytes read, 89 more expected)', IncompleteRead(0 bytes read, 89 more expected))"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.098,
+    ""descargar_csv_s"": 0.218,
+    ""cargar_csv_s"": 0.408,
+    ""preparar_payload_s"": 0.892
+  }
+}";other;0;0;0;;7084;;;;;;;;;;;;;;;;7,084;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+600000 AWS-hibrida;AWS;2;600000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.079,
+    ""descargar_csv_s"": 0.385,
+    ""cargar_csv_s"": 0.358,
+    ""preparar_payload_s"": 0.925,
+    ""cont_train_s"": 1.981
+  }
+}";other;0;0;0;;3835;;;;;;;;;;;;;;;;3,835;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+900000 AWS-hibrida;AWS;3;900000;hibrida;500;"{
+  ""error"": ""('Connection broken: IncompleteRead(0 bytes read, 89 more expected)', IncompleteRead(0 bytes read, 89 more expected))"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.087,
+    ""descargar_csv_s"": 0.589,
+    ""cargar_csv_s"": 0.377,
+    ""preparar_payload_s"": 0.843
+  }
+}";other;0;0;0;;3918;;;;;;;;;;;;;;;;3,918;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+1200000 AWS-hibrida;AWS;4;1200000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.075,
+    ""descargar_csv_s"": 0.797,
+    ""cargar_csv_s"": 0.347,
+    ""preparar_payload_s"": 0.859,
+    ""cont_train_s"": 1.969
+  }
+}";other;0;0;0;;415;;;;;;;;;;;;;;;;0,415;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+1500000 AWS-hibrida;AWS;5;1500000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.087,
+    ""descargar_csv_s"": 0.996,
+    ""cargar_csv_s"": 0.375,
+    ""preparar_payload_s"": 0.877,
+    ""cont_train_s"": 1.936
+  }
+}";other;0;0;0;;4374;;;;;;;;;;;;;;;;4,374;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+1800000 AWS-hibrida;AWS;6;1800000;hibrida;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.078,
+    ""descargar_csv_s"": 1.179,
+    ""cargar_csv_s"": 0.361,
+    ""preparar_payload_s"": 0.888,
+    ""cont_train_s"": 1.946
+  }
+}";other;0;0;0;;4569;;;;;;;;;;;;;;;;4,569;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+2100000 AWS-hibrida;AWS;7;2100000;hibrida;500;"{
+  ""error"": ""('Connection broken: IncompleteRead(0 bytes read, 89 more expected)', IncompleteRead(0 bytes read, 89 more expected))"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.092,
+    ""descargar_csv_s"": 1.303,
+    ""cargar_csv_s"": 0.344,
+    ""preparar_payload_s"": 0.894
+  }
+}";other;0;0;0;;4675;;;;;;;;;;;;;;;;4,675;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+2400000 AWS-hibrida;AWS;8;2400000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.087,
+    ""descargar_csv_s"": 1.513,
+    ""cargar_csv_s"": 0.356,
+    ""preparar_payload_s"": 0.738,
+    ""cont_train_s"": 1.888
+  }
+}";other;0;0;0;;47;;;;;;;;;;;;;;;;0,047;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+2700000 AWS-hibrida;AWS;9;2700000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.089,
+    ""descargar_csv_s"": 1.645,
+    ""cargar_csv_s"": 0.36,
+    ""preparar_payload_s"": 0.964,
+    ""cont_train_s"": 1.911
+  }
+}";other;0;0;0;;5082;;;;;;;;;;;;;;;;5,082;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+3000000 AWS-hibrida;AWS;10;3000000;hibrida;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.073,
+    ""descargar_csv_s"": 1.845,
+    ""cargar_csv_s"": 0.379,
+    ""preparar_payload_s"": 0.707,
+    ""cont_train_s"": 1.926
+  }
+}";other;0;0;0;;5061;;;;;;;;;;;;;;;;5,061;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+3300000 AWS-hibrida;AWS;11;3300000;hibrida;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.077,
+    ""descargar_csv_s"": 1.977,
+    ""cargar_csv_s"": 0.367,
+    ""preparar_payload_s"": 0.962,
+    ""cont_train_s"": 1.924
+  }
+}";other;0;0;0;;5442;;;;;;;;;;;;;;;;5,442;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+3600000 AWS-hibrida;AWS;12;3600000;hibrida;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.081,
+    ""descargar_csv_s"": 2.159,
+    ""cargar_csv_s"": 0.366,
+    ""preparar_payload_s"": 0.865,
+    ""cont_train_s"": 1.934
+  }
+}";other;0;0;0;;5538;;;;;;;;;;;;;;;;5,538;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+3900000 AWS-hibrida;AWS;13;3900000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.073,
+    ""descargar_csv_s"": 2.266,
+    ""cargar_csv_s"": 0.366,
+    ""preparar_payload_s"": 0.702,
+    ""cont_train_s"": 1.924
+  }
+}";other;0;0;0;;5476;;;;;;;;;;;;;;;;5,476;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+4200000 AWS-hibrida;AWS;14;4200000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.074,
+    ""descargar_csv_s"": 2.563,
+    ""cargar_csv_s"": 0.363,
+    ""preparar_payload_s"": 0.801,
+    ""cont_train_s"": 1.928
+  }
+}";other;0;0;0;;5876;;;;;;;;;;;;;;;;5,876;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+4500000 AWS-hibrida;AWS;15;4500000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.088,
+    ""descargar_csv_s"": 2.605,
+    ""cargar_csv_s"": 0.361,
+    ""preparar_payload_s"": 0.923,
+    ""cont_train_s"": 1.911
+  }
+}";other;0;0;0;;6062;;;;;;;;;;;;;;;;6,062;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+4800000 AWS-hibrida;AWS;16;4800000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.078,
+    ""descargar_csv_s"": 2.915,
+    ""cargar_csv_s"": 0.361,
+    ""preparar_payload_s"": 0.818,
+    ""cont_train_s"": 1.911
+  }
+}";other;0;0;0;;6226;;;;;;;;;;;;;;;;6,226;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+5100000 AWS-hibrida;AWS;17;5100000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.071,
+    ""descargar_csv_s"": 2.964,
+    ""cargar_csv_s"": 0.376,
+    ""preparar_payload_s"": 0.966,
+    ""cont_train_s"": 1.954
+  }
+}";other;0;0;0;;6483;;;;;;;;;;;;;;;;6,483;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+5400000 AWS-hibrida;AWS;18;5400000;hibrida;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.09,
+    ""descargar_csv_s"": 3.221,
+    ""cargar_csv_s"": 0.362,
+    ""preparar_payload_s"": 0.879,
+    ""cont_train_s"": 1.952
+  }
+}";other;0;0;0;;6657;;;;;;;;;;;;;;;;6,657;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+5700000 AWS-hibrida;AWS;19;5700000;hibrida;500;"{
+  ""error"": ""<html>\r\n<head><title>502 Bad Gateway</title></head>\r\n<body>\r\n<center><h1>502 Bad Gateway</h1></center>\r\n</body>\r\n</html>\r\n"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.081,
+    ""descargar_csv_s"": 3.394,
+    ""cargar_csv_s"": 0.36,
+    ""preparar_payload_s"": 0.706,
+    ""cont_train_s"": 1.933
+  }
+}";other;0;0;0;;685;;;;;;;;;;;;;;;;0,685;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
+6000000 AWS-hibrida;AWS;20;6000000;hibrida;500;"{
+  ""error"": ""{\""Message\"":\""Request must be smaller than 6291456 bytes for the InvokeFunction operation\""}"",
+  ""tiempos"": {
+    ""descargar_modelo_s"": 0.095,
+    ""descargar_csv_s"": 3.382,
+    ""cargar_csv_s"": 0.364,
+    ""preparar_payload_s"": 0.899,
+    ""cont_train_s"": 1.921
+  }
+}";other;0;0;0;;681;;;;;;;;;;;;;;;;0,681;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!;#¡VALOR!
